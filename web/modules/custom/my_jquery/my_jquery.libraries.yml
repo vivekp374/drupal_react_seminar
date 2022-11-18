@@ -1,0 +1,10 @@
+# Custom module library for general purposes.
+my_jquery1:
+  js:
+    js/my_jquery1.js: {}
+
+my_jquery2:
+  js:
+    js/my_jquery2.js: {}
+  dependencies:
+    - core/jquery

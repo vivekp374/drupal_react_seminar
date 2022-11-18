@@ -1,0 +1,19 @@
+# Custom module library for general purposes.
+my_react1:
+  js:
+    js/my_react.js: {}
+
+my_react2:
+  js:
+    js/my_react.js: {}
+  dependencies:
+    - react/react.reactjs
+
+my_react_webpack:
+  js:
+    dist/main.js: {}
+
+react.reactjs:
+  js:
+    https://unpkg.com/react@18/umd/react.production.min.js: { type: external, minified: false, crossorigin: true }
+    https://unpkg.com/react-dom@18/umd/react-dom.production.min.js: { type: external, minified: false, crossorigin: true }

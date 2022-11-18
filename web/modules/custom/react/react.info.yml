@@ -1,0 +1,5 @@
+name: React
+type: module
+description: Provides react libraries for the ite
+package: Custom
+core_version_requirement: ^9 || ^10

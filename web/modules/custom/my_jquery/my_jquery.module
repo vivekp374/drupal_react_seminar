@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Jquery module.
+ */
+
+function my_jquery_preprocess_node(&$variables) {
+  if ($variables['node']->bundle() === 'jquery') {
+    $variables['#attached']['library'][] = 'my_jquery/my_jquery2';
+  }
+}
